@@ -320,7 +320,7 @@ function pack_loader_image()
 
 		echo "Pack loader: ${FILE}"
 		./tools/boot_merger ${FILE}
-		rm -f *loader*.bin *download*.bin *idblock*.img
+#		rm -f *loader*.bin *download*.bin *idblock*.img
 		echo
 	done
 }
@@ -357,7 +357,7 @@ function pack_trust_image()
 		else
 			exit 1
 		fi
-		rm -f trust*.img
+#		rm -f trust*.img
 		echo
 	done
 
@@ -370,7 +370,7 @@ function pack_trust_image()
 
 		echo "Pack trust: ${FILE}"
 		./tools/trust_merger ${FILE}
-		rm -f trust*.img
+#		rm -f trust*.img
 		echo
 	done
 }
